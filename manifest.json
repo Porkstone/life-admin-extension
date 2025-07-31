@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Life Admin Assistant",
+  "version": "1.0.0",
+  "description": "A chat assistant that helps with web forms",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.tsx"]
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "Life Admin Assistant"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+} 
